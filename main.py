@@ -1,6 +1,7 @@
-# Hangman Game - MK Xinra 100 Days of Code Challenge - Udemy - london appbrewy
-# CS-101 Final Project Version -
-#Codecademy.com
+# Hangman Game - MK Xinra 100 Days of Code Challenge - london appbrewy
+# CS-101 Final Project - MK Xinra Portfolio Version
+# Codecademy.com
+#
 import random
 from hangman_art import logo, stages
 import hangman_words
