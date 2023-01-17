@@ -10,16 +10,8 @@ clear()
 print(logo)
 class HangmanGame:
     def __init__(self):
-        self.lives = 6
-        self.chosen_word = random.choice(hangman_words.word_list)
-        self.end_of_game = False
-        self.display = []
-        self.list_char = list(self.chosen_word)
-        self.word_length = len(self.chosen_word)
-        self.char_reduction = self.word_length
-        self.used_letters = []
-        for _ in range(self.word_length):
-            self.display += "_"
+     self.lives = 6
+     
             
     def play(self):
         while not self.end_of_game:
@@ -77,7 +69,7 @@ class HangmanGame:
         self.used_letters = []
         for _ in range(self.word_length):
             self.display += "_"
-        play_again = input('\n PLAY AGAIN: Y or N \n ')
+        play_again = input('\n PLAY Hangman: Y or N \n ')
         clear()
         if 'y' in play_again.lower():
             self.end_of_game = False
@@ -88,4 +80,4 @@ class HangmanGame:
             print('\nGood-Bye')       
 
 game = HangmanGame()
-game.play()
+game.play_again()
